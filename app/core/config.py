@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     db_url: str = 'postgres://login:password@127.0.0.1:5432/room_reservation'
     path: str
     app_title: str = "Бронирование переговорок"
+    database_url: str
 
     class Config:
         env_file = ".env"
